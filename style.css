@@ -1,0 +1,220 @@
+.row{
+    align-items: stretch;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+.display{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card-container{
+    padding: 30px;
+}
+.card {
+    max-width: 34%;
+    padding: .75rem;
+    margin-bottom: 2rem;
+    border: 0;
+    flex-basis: 34%;
+    flex-grow: 0;
+    flex-shrink: 0;
+    background-color: #F2F4F7;
+    height: 580px;
+    overflow-y: scroll;
+}
+/* custom scrollbar */
+::-webkit-scrollbar {
+    width: 17px;
+}
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #006EB8;
+    border-radius: 20px;
+    border: 6px solid transparent;
+    background-clip: content-box;
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: #a8bbbf;
+}
+.card-header{
+    font-size: 20px;
+    font-weight: 500;
+    border: 0;
+    padding: 20px 0px;
+}
+.card-header .display h5{
+    background-color: transparent;
+}
+.card-header h5{
+    background-color: #E8EEF3;
+    padding: 4px 10px;
+    border-radius: 10%;
+}
+.card-header .shape{
+    border-radius: 30px 5px 5px 30px;
+    background-color: #D21010;
+    width: 27px;
+    height: 27px;
+}
+.card-header .shape:nth-child(2){
+    background-color: #00B5FF;
+}
+.card-body{
+    background-color: #FFF;
+    border-radius: 5%;
+}
+.card-body .card-title1, .card-body .card-title2{
+    font-size: 17px;
+}
+.card-body .card-title2{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.card-body img{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+.card-body .card-text {
+    font-size: 17px;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    overflow:hidden;
+}
+.card-body .text-bg{
+    background-color: #F2F4F7;
+    border-radius: 10%;
+}
+.card-body .review{
+    font-size: 15px;
+}
+.card-body .round-text{
+    border-radius: 50%;
+    width: 38px;
+    height: 38px;
+    font-size: 15px;
+    background-color: #F2F4F7;
+    margin: 0;
+}
+/* modal css start*/
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.modal-content {
+    margin: 10% auto;
+    width: 60%;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
+}
+.modal-header h2,
+.modal-footer h3 {
+    margin: 0;
+}
+.modal-header {
+    padding: 15px;
+    color: #fff;
+    border-radius: 5px;
+}
+.modal-body {
+    padding: 10px 50px;
+    background: #fff;
+    display: flex;
+    justify-content: space-evenly;
+}
+.modal-body form i{
+    font-size: 24px;
+}
+.modal .close {
+    color: #ccc;
+    display: flex;
+    justify-content: end;
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+}
+.modal .close .fa-circle-xmark{
+    color: black;
+}
+section .row{
+    margin-bottom: 10px;
+    background: #E9F0FF;
+    list-style: none;
+    padding: 15px 20px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+section .row i{
+    color: #6990F2;
+    font-size: 30px;
+}
+section .details span{
+    font-size: 14px;
+}
+.progress-area .row .content{
+    width: 100%;
+    margin-left: 15px;
+}
+.progress-area .details{
+    display: flex;
+    align-items: center;
+    margin-bottom: 7px;
+    justify-content: space-between;
+}
+.progress-area .content .progress-bar{
+    height: 6px;
+    width: 100%;
+    margin-bottom: 4px;
+    background: #fff;
+    border-radius: 30px;
+}
+.content .progress-bar .progress{
+    height: 100%;
+    width: 0%;
+    background: #6990F2;
+    border-radius: inherit;
+}
+.uploaded-area{
+    max-height: 232px;
+    overflow-y: scroll;
+}
+.uploaded-area.onprogress{
+    max-height: 150px;
+}
+.uploaded-area::-webkit-scrollbar{
+    width: 0px;
+}
+.uploaded-area .row .content{
+    display: flex;
+    align-items: center;
+}
+.uploaded-area .row .details{
+    display: flex;
+    margin-left: 15px;
+    flex-direction: column;
+}
+.uploaded-area .row .details .size{
+    color: #404040;
+    font-size: 11px;
+}
+.uploaded-area i.fa-check{
+    font-size: 16px;
+}
+/* modal css end */
+  
